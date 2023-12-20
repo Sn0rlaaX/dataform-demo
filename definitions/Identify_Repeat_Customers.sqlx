@@ -1,0 +1,4 @@
+SELECT CustomerID, COUNT(DISTINCT InvoiceNo) AS NumberOfInvoices
+FROM dataform.data
+GROUP BY CustomerID
+HAVING NumberOfInvoices > 1;

@@ -1,0 +1,4 @@
+SELECT InvoiceNo, SUM(Quantity * UnitPrice) AS InvoiceTotal
+FROM dataform.data
+GROUP BY InvoiceNo
+ORDER BY InvoiceTotal DESC;

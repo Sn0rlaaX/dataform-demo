@@ -1,0 +1,4 @@
+SELECT Country, COUNT(*) AS NumOfInvoices, SUM(Quantity * UnitPrice) AS TotalSales
+FROM dataform.data
+GROUP BY Country
+ORDER BY TotalSales DESC;
